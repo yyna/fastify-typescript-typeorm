@@ -1,0 +1,35 @@
+@host = http://localhost:3000
+@token = Bearer eyJhbGciOiJIUzI1NiJ9.MQ.fGaUARI99DDadCuNm4ZUhaB6Bpx8KiJsnCLTisJ0bp4
+@id = 1
+
+################################################ create new memo
+POST {{host}}/memo HTTP/1.1
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "title": "title",
+    "content": "test content"
+}
+
+################################################ get memo list
+GET {{host}}/memo HTTP/1.1
+Authorization: {{token}}
+
+################################################ get memo
+GET {{host}}/memo/{{id}} HTTP/1.1
+Authorization: {{token}}
+
+################################################ update memo title
+PATCH {{host}}/memo/{{id}} HTTP/1.1
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "title": "new title"
+}
+
+################################################ delete memo
+DELETE {{host}}/memo/{{id}} HTTP/1.1
+Content-Type: application/json
+Authorization: {{token}}
