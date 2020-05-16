@@ -1,6 +1,6 @@
 @host = http://localhost:3000
 @token = Bearer eyJhbGciOiJIUzI1NiJ9.MQ.fGaUARI99DDadCuNm4ZUhaB6Bpx8KiJsnCLTisJ0bp4
-@id = 1
+@id = 2
 
 ################################################ create new memo
 POST {{host}}/memo HTTP/1.1
