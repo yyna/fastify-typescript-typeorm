@@ -11,7 +11,7 @@
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^4.0.1",
-        "fastify": "^2.14.1",
+        "fastify": "^2.15.1",
         "fastify-jwt": "^1.3.1",
         "fastify-plugin": "^1.6.1",
         "pg": "^8.2.0",
