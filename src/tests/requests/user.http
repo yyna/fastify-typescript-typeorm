@@ -1,0 +1,20 @@
+# src/tests/requests/user.http
+@host = http://localhost:3000
+
+################################################ sign up
+POST {{host}}/sign-up HTTP/1.1
+content-type: application/json
+
+{
+  "email": "test@email.com",
+  "password": "testpassword"
+}
+
+################################################ sign in
+POST {{host}}/sign-in HTTP/1.1
+content-type: application/json
+
+{
+  "email": "test@email.com",
+  "password": "testpassword"
+}
